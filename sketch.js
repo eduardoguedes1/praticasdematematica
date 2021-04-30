@@ -21,9 +21,14 @@ var tela = 0;
 
 function acaboujogo(){
   background(220);
-    textSize(28);
+    textSize(35);
     fill(10);
-  text('GAME OVER!!',20,50)
+  text('GAME OVER!!',130,250)
+   textSize(26);
+    fill(10);
+  text('aperte esc para voltar a tela inicial.',40,50)
+  
+   if (keyIsDown(ESCAPE)){tela=0}
 }
 
 
@@ -177,7 +182,13 @@ function fase10(){
     text('PARABÉNS!!', 120, 100)
   text('Você resolveu todos  os problemas matemáticos. ',30,200,450,400)
   
+   textSize(26);
+    fill(10);
     
+ text('aperte esc para voltar a tela inicial.',40,450)
+  
+  
+    if (keyIsDown(ESCAPE)){tela=0}
     
   }
 
@@ -433,7 +444,7 @@ function telaInstrucoes(){
     text('Este jogo tem o objetivo fazer com que as crianças desenvolvar  abilidades básicas de matemática.Durante o jogo o usuário irá resolver problemas simples de matemática.Se o usuário acertar o problema,o jogo mostrará um novo problema para ele resolver.',50,50,400,450)
      fill(10)
     text('aperte esc para volta a tela inicial',70,430)
-  
+   if (keyIsDown(ESCAPE)){tela=0}
 }
 
 function telaCreditos(){
@@ -455,7 +466,7 @@ function telaCreditos(){
      image(imagemProgramador,40,280,80,80)
     text('aperte esc para voltar para a tela inicial',160,20)
     
-  
+   if (keyIsDown(ESCAPE)){tela=0}
   
 }
 
